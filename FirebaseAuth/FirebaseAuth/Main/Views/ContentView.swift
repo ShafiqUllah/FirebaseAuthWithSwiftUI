@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authViewModel : AuthViewModel
+    
     var body: some View {
-        LoginView()
+        
+        Group{
+            if authViewModel.session == nil{
+                LoginView()
+    //                .environmentObject(authViewModel) // send by group
+            }else{
+                ProfileView()
+    //                .environmentObject(authViewModel)  // send by group
+            }
+        }.environmentObject(authViewModel) // sending the whole group
+        
+        
     }
 }
 

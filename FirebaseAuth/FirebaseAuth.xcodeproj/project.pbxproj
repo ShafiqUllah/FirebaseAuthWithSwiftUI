@@ -17,6 +17,7 @@
 		9A5244DB2CD0AAE700903A4D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5244DA2CD0AAE700903A4D /* FirebaseAuth */; };
 		9A5244DD2CD0AAF200903A4D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5244DC2CD0AAF200903A4D /* FirebaseFirestore */; };
 		9A5244DF2CD0AB0D00903A4D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5244DE2CD0AB0D00903A4D /* FirebaseStorage */; };
+		9A5244E32CD18CFC00903A4D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5244E22CD18CFA00903A4D /* ProfileView.swift */; };
 		9A5614E72CC82B5B00A7842D /* FirebaseAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5614E62CC82B5B00A7842D /* FirebaseAuthApp.swift */; };
 		9A5614E92CC82B5B00A7842D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5614E82CC82B5B00A7842D /* ContentView.swift */; };
 		9A5614EB2CC82B6200A7842D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5614EA2CC82B6200A7842D /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		9A5244CC2CD05F9E00903A4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A5244D52CD0647E00903A4D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		9A5244D72CD0648C00903A4D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9A5244E22CD18CFA00903A4D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9A5614E32CC82B5B00A7842D /* FirebaseAuth-fo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirebaseAuth-fo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5614E62CC82B5B00A7842D /* FirebaseAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthApp.swift; sourceTree = "<group>"; };
 		9A5614E82CC82B5B00A7842D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				9A5614FF2CC82DF500A7842D /* LoginView.swift */,
 				9A03C0742CC832D500FAB1FE /* InputView.swift */,
 				9A03C07C2CCC641000FAB1FE /* CreateAccountView.swift */,
+				9A5244E22CD18CFA00903A4D /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				9A03C0782CCC589200FAB1FE /* CapsuleButtonStyle.swift in Sources */,
 				9A5615002CC82DF500A7842D /* LoginView.swift in Sources */,
+				9A5244E32CD18CFC00903A4D /* ProfileView.swift in Sources */,
 				9A03C0752CC832D500FAB1FE /* InputView.swift in Sources */,
 				9A03C07D2CCC641000FAB1FE /* CreateAccountView.swift in Sources */,
 				9A5244D62CD0647E00903A4D /* AuthViewModel.swift in Sources */,

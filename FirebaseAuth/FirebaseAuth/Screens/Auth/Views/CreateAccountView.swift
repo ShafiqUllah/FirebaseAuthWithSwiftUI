@@ -14,7 +14,7 @@ struct CreateAccountView: View {
     @State private var password : String = ""
     @State private var confirmPassword : String = ""
     
-//    @StateObject 
+    @EnvironmentObject var authViewModel : AuthViewModel
     
     var isValidPassword:Bool{
         confirmPassword == password
@@ -56,6 +56,9 @@ struct CreateAccountView: View {
             Spacer()
             
             Button{
+                Task{
+                    await authViewModel.createUser(email: email, fullName: fullName, password: password)
+                }
                 
             } label: {
                 Text("Create Account")
