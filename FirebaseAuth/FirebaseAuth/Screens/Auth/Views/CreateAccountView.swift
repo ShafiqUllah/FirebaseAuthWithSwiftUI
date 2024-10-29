@@ -14,6 +14,8 @@ struct CreateAccountView: View {
     @State private var password : String = ""
     @State private var confirmPassword : String = ""
     
+//    @StateObject 
+    
     var isValidPassword:Bool{
         confirmPassword == password
     }
