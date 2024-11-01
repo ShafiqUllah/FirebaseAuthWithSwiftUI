@@ -48,6 +48,9 @@ struct LoginView: View {
             .ignoresSafeArea()
             .padding(.horizontal)
             .padding(.vertical, 0)
+            .alert("Something Went Worng", isPresented: $authViewModel.isError, actions: {
+                // No action
+            })
         }
         
     }
@@ -151,6 +154,7 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(AuthViewModel())
     }
 }
 

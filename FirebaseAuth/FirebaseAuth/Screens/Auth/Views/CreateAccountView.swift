@@ -15,6 +15,7 @@ struct CreateAccountView: View {
     @State private var confirmPassword : String = ""
     
     @EnvironmentObject var authViewModel : AuthViewModel
+    @Environment(\.presentationMode) var presentationMode
     
     var isValidPassword:Bool{
         confirmPassword == password
@@ -58,6 +59,10 @@ struct CreateAccountView: View {
             Button{
                 Task{
                     await authViewModel.createUser(email: email, fullName: fullName, password: password)
+                    
+                    if !authViewModel.isError{
+                        presentationMode.wrappedValue.dismiss()
+                    }
                 }
                 
             } label: {
@@ -77,5 +82,6 @@ struct CreateAccountView: View {
 struct CreateAccountView_Previews: PreviewProvider {
     static var previews: some View {
         CreateAccountView()
+            .environmentObject(AuthViewModel())
     }
 }
