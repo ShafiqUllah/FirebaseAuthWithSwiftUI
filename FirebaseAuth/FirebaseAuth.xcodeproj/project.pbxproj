@@ -24,6 +24,8 @@
 		9A5614EE2CC82B6200A7842D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5614ED2CC82B6200A7842D /* Preview Assets.xcassets */; };
 		9A5614FE2CC82CD800A7842D /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5614FD2CC82CD800A7842D /* LoginAssets.xcassets */; };
 		9A5615002CC82DF500A7842D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5614FF2CC82DF500A7842D /* LoginView.swift */; };
+		9AC8148F2CD4B46400B6C3EF /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8148E2CD4B46400B6C3EF /* ForgetPasswordView.swift */; };
+		9AC814932CD4B84A00B6C3EF /* EmailSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC814922CD4B84A00B6C3EF /* EmailSendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9A5614ED2CC82B6200A7842D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A5614FD2CC82CD800A7842D /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
 		9A5614FF2CC82DF500A7842D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9AC8148E2CD4B46400B6C3EF /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		9AC814922CD4B84A00B6C3EF /* EmailSendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				9A5614E62CC82B5B00A7842D /* FirebaseAuthApp.swift */,
 				9A5614E82CC82B5B00A7842D /* ContentView.swift */,
+				9AC8148E2CD4B46400B6C3EF /* ForgetPasswordView.swift */,
+				9AC814922CD4B84A00B6C3EF /* EmailSendView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 				9A03C07D2CCC641000FAB1FE /* CreateAccountView.swift in Sources */,
 				9A5244D62CD0647E00903A4D /* AuthViewModel.swift in Sources */,
 				9A5244D82CD0648C00903A4D /* User.swift in Sources */,
+				9AC814932CD4B84A00B6C3EF /* EmailSendView.swift in Sources */,
 				9A5614E92CC82B5B00A7842D /* ContentView.swift in Sources */,
 				9A03C07B2CCC59C700FAB1FE /* Router.swift in Sources */,
+				9AC8148F2CD4B46400B6C3EF /* ForgetPasswordView.swift in Sources */,
 				9A5614E72CC82B5B00A7842D /* FirebaseAuthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

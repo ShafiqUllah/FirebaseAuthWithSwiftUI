@@ -83,8 +83,9 @@ struct LoginView: View {
         HStack{
             Spacer()
             
-            Button{
-                
+            NavigationLink{
+                ForgetPasswordView()
+                    .environmentObject(authViewModel)
             }label: {
                 Text("Forget Password?")
                     .fontWeight(.medium)
