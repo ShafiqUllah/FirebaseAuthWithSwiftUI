@@ -13,9 +13,9 @@ struct LoginView: View {
     @State private var password : String = ""
     
     @EnvironmentObject var authViewModel : AuthViewModel
+    @EnvironmentObject var router : Router
     
     var body: some View {
-        NavigationView {
             ScrollView{
                 VStack(spacing : 16){
                     // logo
@@ -51,7 +51,7 @@ struct LoginView: View {
             .alert("Something Went Worng", isPresented: $authViewModel.isError, actions: {
                 // No action
             })
-        }
+        
         
     }
     
@@ -83,16 +83,22 @@ struct LoginView: View {
         HStack{
             Spacer()
             
-            NavigationLink{
-                ForgetPasswordView()
-                    .environmentObject(authViewModel)
-            }label: {
+            Button{
+                router.navigation(to: .forgotPassword)
+            } label: {
                 Text("Forget Password?")
                     .fontWeight(.medium)
                     .foregroundStyle(.gray)
                     .font(.subheadline)
-                
             }
+            
+//            NavigationLink{
+//                ForgetPasswordView()
+//                    .environmentObject(authViewModel)
+//            }label: {
+//                
+//                
+//            }
         }
     }
     
@@ -129,9 +135,9 @@ struct LoginView: View {
     }
     
     private var foorterView: some View{
-        NavigationLink{
-            CreateAccountView()
-                .environmentObject(authViewModel)
+        
+        Button{
+            router.navigation(to: .createAccount)
         } label: {
             HStack{
                 Text("Don't have an account?")
@@ -140,6 +146,13 @@ struct LoginView: View {
                     .foregroundStyle(.teal)
             }
         }
+        
+//        NavigationLink{
+//            CreateAccountView()
+//                .environmentObject(authViewModel)
+//        } label: {
+//            
+//        }
     }
     
     private var bottomView: some View{

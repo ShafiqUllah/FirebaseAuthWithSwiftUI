@@ -15,7 +15,8 @@ struct CreateAccountView: View {
     @State private var confirmPassword : String = ""
     
     @EnvironmentObject var authViewModel : AuthViewModel
-    @Environment(\.presentationMode) var presentationMode
+//    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var router : Router
     
     var isValidPassword:Bool{
         confirmPassword == password
@@ -61,7 +62,8 @@ struct CreateAccountView: View {
                     await authViewModel.createUser(email: email, fullName: fullName, password: password)
                     
                     if !authViewModel.isError{
-                        presentationMode.wrappedValue.dismiss()
+//                        presentationMode.wrappedValue.dismiss()
+                        router.navigateBack()
                     }
                 }
                 
@@ -82,6 +84,6 @@ struct CreateAccountView: View {
 struct CreateAccountView_Previews: PreviewProvider {
     static var previews: some View {
         CreateAccountView()
-            .environmentObject(AuthViewModel())
+            .environmentObject(AuthViewModel()) 
     }
 }

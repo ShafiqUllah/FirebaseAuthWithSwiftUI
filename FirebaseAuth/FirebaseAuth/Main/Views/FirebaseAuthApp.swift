@@ -24,11 +24,26 @@ struct FirebaseAuthApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     @StateObject private var authViewModel = AuthViewModel()
+    @ObservedObject private var router =  Router()
     
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
-                .environmentObject(authViewModel)
+            NavigationStack(path: $router.navPath){ // from iOS 16
+                
+                ContentView()
+                    .navigationDestination(for: Router.AuthFLow.self){ destination in
+                        switch destination{
+                        case .loging : LoginView()
+                        case .createAccount: CreateAccountView()
+                        case .profile: ProfileView()
+                        case .forgetPassword : ForgetPasswordView()
+                        case .emailSend: EmailSendView()
+                        }
+                    }
+            }
+            .environmentObject(authViewModel)
+            .environmentObject(router)
         }
     }
 }

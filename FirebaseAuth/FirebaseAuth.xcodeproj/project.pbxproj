@@ -135,8 +135,6 @@
 			children = (
 				9A5614E62CC82B5B00A7842D /* FirebaseAuthApp.swift */,
 				9A5614E82CC82B5B00A7842D /* ContentView.swift */,
-				9AC8148E2CD4B46400B6C3EF /* ForgetPasswordView.swift */,
-				9AC814922CD4B84A00B6C3EF /* EmailSendView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,9 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				9A03C0762CCC584F00FAB1FE /* Styles */,
+				9AC8148E2CD4B46400B6C3EF /* ForgetPasswordView.swift */,
 				9A5614FF2CC82DF500A7842D /* LoginView.swift */,
 				9A03C0742CC832D500FAB1FE /* InputView.swift */,
 				9A03C07C2CCC641000FAB1FE /* CreateAccountView.swift */,
+				9AC814922CD4B84A00B6C3EF /* EmailSendView.swift */,
 				9A5244E22CD18CFA00903A4D /* ProfileView.swift */,
 			);
 			path = Views;

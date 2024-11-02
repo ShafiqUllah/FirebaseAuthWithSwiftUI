@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ForgetPasswordView: View {
     @State private var email : String = ""
-    @State private var isEmailSend = false
+    
     @EnvironmentObject var authViewModel : AuthViewModel
+    @EnvironmentObject var router : Router
     
     var body: some View {
         VStack(alignment: .leading){
@@ -31,7 +32,7 @@ struct ForgetPasswordView: View {
                 Task{
                     await authViewModel.resetPassword(by: email)
                     if !authViewModel.isError{
-                        isEmailSend = true
+                        router.navigation(to: .emailSend)
                     }
                 }
                                 
@@ -57,7 +58,6 @@ struct ForgetPasswordView: View {
             }
         }
     }
-    
 }
 
 struct ForgetPasswordView_Previews: PreviewProvider {
