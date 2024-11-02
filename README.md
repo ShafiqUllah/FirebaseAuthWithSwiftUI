@@ -3,7 +3,7 @@
 Firebase Authentication with SwiftUI
 This project demonstrates how to integrate Google Firebase Authentication and store user data in Firestore using SwiftUI. It also covers routing techniques, sharing environment variables across multiple views, and implementing the MVVM architecture for a clean, scalable codebase.
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/ShafiqUllah/FirebaseAuthWithSwiftUI/blob/main/ScreenShots/phone1.png)?raw=true)
+https://github.com/ShafiqUllah/FirebaseAuthWithSwiftUI/blob/main/ScreenShots/phone1.png
 
 
 # Features
